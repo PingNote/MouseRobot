@@ -23,7 +23,7 @@ public class Main {
 			cmd_Help();
 			break;
 		case 1: // cmd : no parameter
-			cmd = SwitchCmd(args[1]);
+			cmd = SwitchCmd(args[0]);
 			switch (cmd) {
 			default:
 				cmd_Help();
@@ -49,14 +49,14 @@ public class Main {
 			}
 			break;
 		default:
-			cmd = SwitchCmd(args[1]);
+			cmd = SwitchCmd(args[0]);
 			switch (cmd) {
 			default:
 				cmd_Help(args);
 				break;
 			case 1:
 				if (args.length == 3)
-					idv.PN_Wu.Robot.mouseClick(Integer.parseInt(args[2]));
+					idv.PN_Wu.Robot.mouseClick(Integer.parseInt(args[1]));
 				else
 					cmd_Help(cmd);
 				break;
@@ -68,49 +68,49 @@ public class Main {
 				break;
 			case 3:
 				if (args.length == 3)
-					idv.PN_Wu.Robot.mousePress(Integer.parseInt(args[2]));
+					idv.PN_Wu.Robot.mousePress(Integer.parseInt(args[1]));
 				else
 					cmd_Help(cmd);
 				break;
 			case 4:
 				if (args.length == 3)
-					idv.PN_Wu.Robot.mouseRelease(Integer.parseInt(args[2]));
+					idv.PN_Wu.Robot.mouseRelease(Integer.parseInt(args[1]));
 				else
 					cmd_Help(cmd);
 				break;
 			case 5:
-				if (args.length == 4)
-					idv.PN_Wu.Robot.mouseMove(Integer.parseInt(args[2]),
-							Integer.parseInt(args[3]));
+				if (args.length == 3)
+					idv.PN_Wu.Robot.mouseMove(Integer.parseInt(args[1]),
+							Integer.parseInt(args[2]));
 				else
 					cmd_Help(cmd);
 				break;
 			case 6:
-				if (args.length == 4)
-					idv.PN_Wu.Robot.mouseMoveTo(Integer.parseInt(args[2]),
-							Integer.parseInt(args[3]));
+				if (args.length == 3)
+					idv.PN_Wu.Robot.mouseMoveTo(Integer.parseInt(args[1]),
+							Integer.parseInt(args[2]));
 				else
 					cmd_Help(cmd);
 				break;
 			case 7:
 				if (args.length == 4)
-					idv.PN_Wu.Robot.mouseDrag(Integer.parseInt(args[2]),
-							Integer.parseInt(args[3]));
+					idv.PN_Wu.Robot.mouseDrag(Integer.parseInt(args[1]),
+							Integer.parseInt(args[2]));
 				else if (args.length == 5)
-					idv.PN_Wu.Robot.mouseDrag(Integer.parseInt(args[2]),
-							Integer.parseInt(args[3]),
-							Integer.parseInt(args[4]));
+					idv.PN_Wu.Robot.mouseDrag(Integer.parseInt(args[1]),
+							Integer.parseInt(args[2]),
+							Integer.parseInt(args[3]));
 				else
 					cmd_Help(cmd);
 				break;
 			case 8:
 				if (args.length == 4)
-					idv.PN_Wu.Robot.mouseDragTo(Integer.parseInt(args[2]),
-							Integer.parseInt(args[3]));
+					idv.PN_Wu.Robot.mouseDragTo(Integer.parseInt(args[1]),
+							Integer.parseInt(args[2]));
 				else if (args.length == 5)
-					idv.PN_Wu.Robot.mouseDragTo(Integer.parseInt(args[2]),
-							Integer.parseInt(args[3]),
-							Integer.parseInt(args[4]));
+					idv.PN_Wu.Robot.mouseDragTo(Integer.parseInt(args[1]),
+							Integer.parseInt(args[2]),
+							Integer.parseInt(args[3]));
 				else
 					cmd_Help(cmd);
 				break;
