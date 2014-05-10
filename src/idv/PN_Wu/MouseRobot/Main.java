@@ -93,10 +93,10 @@ public class Main {
 					cmd_Help(cmd);
 				break;
 			case 7:
-				if (args.length == 4)
+				if (args.length == 3)
 					idv.PN_Wu.Robot.mouseDrag(Integer.parseInt(args[1]),
 							Integer.parseInt(args[2]));
-				else if (args.length == 5)
+				else if (args.length == 4)
 					idv.PN_Wu.Robot.mouseDrag(Integer.parseInt(args[1]),
 							Integer.parseInt(args[2]),
 							Integer.parseInt(args[3]));
@@ -104,10 +104,10 @@ public class Main {
 					cmd_Help(cmd);
 				break;
 			case 8:
-				if (args.length == 4)
+				if (args.length == 3)
 					idv.PN_Wu.Robot.mouseDragTo(Integer.parseInt(args[1]),
 							Integer.parseInt(args[2]));
-				else if (args.length == 5)
+				else if (args.length == 4)
 					idv.PN_Wu.Robot.mouseDragTo(Integer.parseInt(args[1]),
 							Integer.parseInt(args[2]),
 							Integer.parseInt(args[3]));
@@ -134,6 +134,8 @@ public class Main {
 			http://docs.oracle.com/javase/7/docs/api/java/awt/Toolkit.html
 			http://docs.oracle.com/javase/7/docs/api/java/awt/event/InputEvent.html
 			http://docs.oracle.com/javase/7/docs/api/java/awt/event/MouseEvent.html
+
+			http://www.cjsdn.net/Doc/JDK60/
 		*/
 	}
 

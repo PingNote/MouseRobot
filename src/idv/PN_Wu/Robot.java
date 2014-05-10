@@ -8,7 +8,7 @@ import java.awt.event.InputEvent;
 
 public class Robot {
 
-	static final int DefaultDelay = 25;
+	static final int DefaultDelay = 10;
 
 	static java.awt.Robot robot;
 	static final int BUTTON1_MASK, BUTTON2_MASK, BUTTON3_MASK;
@@ -27,6 +27,7 @@ public class Robot {
 
 	public static void mousePress() {
 		mousePress(BUTTON1_MASK);
+		robot.delay(ms);
 	}
 
 	public static void mousePress(int buttons) {
@@ -70,6 +71,7 @@ public class Robot {
 
 	public static void mouseMoveTo(int x, int y) {
 		robot.mouseMove(x, y);
+		robot.delay(ms);
 	}
 
 	public static void mouseMove(int x, int y) {
